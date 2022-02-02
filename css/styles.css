@@ -1,0 +1,92 @@
+/* HTML Tag selectors */
+
+h1, h2, p {
+  color: darkslategray;
+}
+
+p {
+  padding: 0.2em, 0.2em, 2em, 2em;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+  padding-bottom: 0.1em;
+
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  background-color: cornsilk;
+  font-size: medium;
+}
+
+/* Features Selectors */
+
+.profileImg {
+  position: static;
+  padding-top: 0.1em;
+  height: 50%;
+}
+
+.button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+
+  text-decoration: none;
+  color: blue;
+  background-color: #F0F0F0;
+  padding: 0.5em;
+}
+.button:hover {
+  color: red;
+  background-color: green;
+}
+
+.social-icon:hover {
+  color: red;
+}
+
+
+/* DIV Selectors */
+.container {
+  margin: 5em;
+  margin-top: 0.2em;
+  padding: 0.1em;
+  position: static;
+}
+
+.socials {
+  margin: 10em;
+  padding: 5em;
+}
+.map {
+  padding-bottom: 0.5em;
+  font-size: x-small;
+}
+
+/* Breakpoints */
+@media (max-width:1000px) {
+  .container {
+    text-align: center;
+  }
+
+  .socials {
+    text-align: center;
+  }
+  /* .insta-btn {
+    text-align: center;
+  } */
+
+  .profileImg {
+    width: 50%;
+    height: 25%;
+    position: static;
+    transform:rotate(0);
+  }
+}
