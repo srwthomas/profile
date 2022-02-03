@@ -5,6 +5,9 @@
 
   <script src="https://use.fontawesome.com/0990363f88.js"></script>
 
+  <!-- <script src="animation.js"></script> -->
+
+
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 
@@ -43,13 +46,62 @@
 
 
 
-<!-- <div class="insta-btn">
-  <a href="https://www.youtube.com/channel/UCaUTYgn2YpEALg6gTpl0zhw" class="button"></a>
+<!-- <div class="btn">
+  <a href="footer" class="btn"></a>
 </div> -->
 
 <div class="map">
   <h2>Currently located in this area!</h2>
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47893.157446511854!2d2.1739934933557734!3d41.388805621717985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a49816718e30e5%3A0x44b0fb3d4f47660a!2sBarcelona!5e0!3m2!1sen!2ses!4v1643817928483!5m2!1sen!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47893.157446511854!2d2.1739934933557734!3d41.388805621717985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a49816718e30e5%3A0x44b0fb3d4f47660a!2sBarcelona!5e0!3m2!1sen!2ses!4v1643817928483!5m2!1sen!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+
+<div class="footer" id="footer">
+  <!-- <body translate="no"> -->
+    <canvas width="1440" height="303">
+      </canvas>
+        <script id="animation-js">
+          // Initialising the canvas
+          var canvas = document.querySelector('canvas'),
+          ctx = canvas.getContext('2d');
+
+          // Setting the width and height of the canvas
+          canvas.width = window.innerWidth;
+          canvas.height = window.innerHeight;
+
+          // Setting up the letters
+          var letters = 'ABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZ';
+          letters = letters.split('');
+
+          // Setting up the columns
+          var fontSize = 10,
+          columns = canvas.width / fontSize;
+
+          // Setting up the drops
+          var drops = [];
+          for (var i = 0; i < columns; i++) {
+            drops[i] = 1;
+          }
+
+          // Setting up the draw function
+          function draw() {
+            ctx.fillStyle = 'rgba(0, 0, 0, .1)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            for (var i = 0; i < drops.length; i++) {
+              var text = letters[Math.floor(Math.random() * letters.length)];
+              ctx.fillStyle = '#0f0';
+              ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+              drops[i]++;
+              if (drops[i] * fontSize > canvas.height && Math.random() > .95) {
+                drops[i] = 0;
+              }
+            }
+          }
+
+          // Loop the animation
+          setInterval(draw, 33);
+          //# sourceURL=pen.js
+              </script>
+</div>
 
 </body>
 

@@ -1,3 +1,7 @@
+/* Components */
+
+@import url("components/footer.css");
+
 /* HTML Tag selectors */
 
 h1, h2, p {
