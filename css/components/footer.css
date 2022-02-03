@@ -1,7 +1,7 @@
 .footer {
   display: flex;
   align-items:baseline;
-  height: 20px;
+  /* height: 20px; */
   padding: 0;
 }
 
@@ -15,5 +15,5 @@ canvas {
 }
 
 canvas[Attributes Style] {
-  aspect-ratio: 1000px / 5px;
+  aspect-ratio: 1440px / 50px;
 }
