@@ -1,0 +1,15 @@
+.btn {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 0.5em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.container-button {
+  padding: 10em;
+  padding-bottom: 15em;
+}
