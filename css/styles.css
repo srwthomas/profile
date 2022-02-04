@@ -7,10 +7,11 @@
 
 h1, h2, p {
   color: darkslategray;
+  padding-bottom: 0.5em;
 }
 
 p {
-  padding: 0.2em, 0.2em, 2em, 2em;
+  padding: 0.4em, 0.2em, 2em, 2em;
 }
 
 h1 {

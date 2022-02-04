@@ -1,0 +1,17 @@
+/* Breakpoints */
+@media (max-width:1000px) {
+  .container {
+    text-align: center;
+  }
+
+  .socials {
+    text-align: center;
+  }
+
+  .profileImg {
+    width: 50%;
+    height: 25%;
+    position: static;
+    transform:rotate(0);
+  }
+}

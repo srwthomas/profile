@@ -1,0 +1,26 @@
+/* Features Selectors */
+
+.profileImg {
+  position: static;
+  padding-top: 0.1em;
+  height: 50%;
+}
+
+.button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+
+  text-decoration: none;
+  color: blue;
+  background-color: #F0F0F0;
+  padding: 0.5em;
+}
+.button:hover {
+  color: red;
+  background-color: green;
+}
+
+.social-icon:hover {
+  color: red;
+}
