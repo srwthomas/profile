@@ -18,3 +18,8 @@ canvas {
 canvas[Attributes Style] {
   aspect-ratio: 1440px / 50px;
 }
+
+/* #footer{
+  position: flex-end;
+      bottom: 0;
+} */
